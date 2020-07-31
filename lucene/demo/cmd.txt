@@ -14,7 +14,7 @@ ant -f lucene/demo/build.xml run-simple-metrics-demo
 
 # TFIDFHtmlIndexFiles.java
 ant -f lucene/demo/build.xml &&
-ant -f lucene/demo/build.xml -Ddocs=lucene/demo/data/wiki-small/en/articles/run-tfidf-html
+ant -f lucene/demo/build.xml -Ddocs=lucene/demo/data/wiki-small/en/articles/ run-tfidf-html
 
 ant -f lucene/demo/build.xml &&
 ant -f lucene/demo/build.xml -Ddocs=lucene/demo/data-test/ run-tfidf-html
