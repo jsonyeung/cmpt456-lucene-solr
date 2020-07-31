@@ -32,8 +32,6 @@ import org.apache.lucene.index.Term;
 import org.apache.lucene.store.Directory;
 import org.apache.lucene.store.FSDirectory;
 
-import org.apache.lucene.demo.CMPT465Analyzer;
-
 public class HtmlIndexFiles {
   private HtmlIndexFiles() {}
 
@@ -69,7 +67,7 @@ public class HtmlIndexFiles {
       System.out.println("Indexing to directory '" + indexPath + "'...");
 
       Directory dir = FSDirectory.open(Paths.get(indexPath));
-      Analyzer analyzer = new StandardAnalyzer();
+      Analyzer analyzer = new StandardAnalyzer(); // new CMPT456Analyzer();
       IndexWriterConfig iwc = new IndexWriterConfig(analyzer);
 
       if (create) { iwc.setOpenMode(OpenMode.CREATE); } 
